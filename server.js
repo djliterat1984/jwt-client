@@ -6,7 +6,7 @@ const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: ["http://localhost:5173","https://auth-app-28w4.onrender.com"],
+    origin: ["http://localhost:5173","https://auth-app-28w4.onrender.com", "https://jwt-client-ukvv.onrender.com","https://auth-app-28w4.onrender.com/api/user/login"],
   })
 );
 
