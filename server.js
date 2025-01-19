@@ -3,7 +3,12 @@ import cors from "cors";
 import path from "path";
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    credentials: true,
+    origin: ["http://localhost:5173","https://auth-app-28w4.onrender.com"],
+  })
+);
 
 app.listen(process.env.PORT || 3001, () => {
   console.log(`running on port ${process.env.PORT || 3001}`);
